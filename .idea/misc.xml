@@ -26,6 +26,7 @@
         <entry key="..\:/Android Studio/Java/Apps/K_Map/app/src/main/res/menu/menu_main.xml" value="0.10520833333333333" />
         <entry key="..\:/Android Studio/Java/Apps/K_Map/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.15052083333333333" />
         <entry key="..\:/Android Studio/Java/Apps/K_Map/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.11041666666666666" />
+        <entry key="..\:/Android Studio/Java/Apps/K_Map/app/src/main/res/xml/root_preferences.xml" value="0.15677083333333333" />
       </map>
     </option>
   </component>
@@ -34,5 +35,25 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="RMarkdownSettings">
+    <option name="renderProfiles">
+      <map>
+        <entry key="file://$PROJECT_DIR$/README.md">
+          <value>
+            <RMarkdownRenderProfile>
+              <option name="outputDirectoryUrl" value="file://$PROJECT_DIR$" />
+            </RMarkdownRenderProfile>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/README.md.rmd">
+          <value>
+            <RMarkdownRenderProfile>
+              <option name="outputDirectoryUrl" value="file://$PROJECT_DIR$" />
+            </RMarkdownRenderProfile>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

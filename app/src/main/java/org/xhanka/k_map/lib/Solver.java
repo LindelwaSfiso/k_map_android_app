@@ -466,15 +466,13 @@ public class Solver implements Runnable {
                         }
                         for (int i = 0; i < lstPrime.size(); i++) {
                             if (lstPrime.get(i).isTrue(lstOnes.get(k))) {
-                                if (QuineMcCluskey) {
-                                    if (grouped) {
-                                        QMinternals.append(" + ");
-                                    } else {
-                                        QMinternals.append('(');
-                                        grouped = true;
-                                    }
-                                    QMinternals.append((char) ('A' + i));
+                                if (grouped) {
+                                    QMinternals.append(" + ");
+                                } else {
+                                    QMinternals.append('(');
+                                    grouped = true;
                                 }
+                                QMinternals.append((char) ('A' + i));
                             }
                         }
                         if (grouped) {

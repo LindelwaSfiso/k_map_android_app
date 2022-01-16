@@ -14,6 +14,9 @@
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/navigation_rules" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_settings"
+            app:destination="@id/navigation_settings" />
     </fragment>
 
     <fragment
@@ -26,4 +29,9 @@
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/navigation_home" />
     </fragment>
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="org.xhanka.k_map.ui.SettingsFragment"
+        android:label="@string/action_settings" />
 </navigation>

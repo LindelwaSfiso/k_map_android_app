@@ -17,4 +17,12 @@
         <item>5 variables</item>
         <item>6 variables</item>
     </string-array>
+
+    <string-array name="change_variables_options_values">
+        <item>2_variables</item>
+        <item>3_variables</item>
+        <item>4_variables</item>
+        <item>5_variables</item>
+        <item>6_variables</item>
+    </string-array>
 </resources>

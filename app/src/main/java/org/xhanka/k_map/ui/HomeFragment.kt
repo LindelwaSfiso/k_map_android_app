@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.view.*
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
+import androidx.navigation.NavController
+import androidx.navigation.findNavController
 import org.xhanka.k_map.R
 import org.xhanka.k_map.databinding.FragmentHomeBinding
 
@@ -14,6 +16,7 @@ class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
     private lateinit var alertDialog: AlertDialog
+    private lateinit var navController: NavController
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -27,6 +30,8 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        navController = view.findNavController()
 
         alertDialog = AlertDialog.Builder(view.context)
             .setSingleChoiceItems(
@@ -57,7 +62,10 @@ class HomeFragment : Fragment() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
-            R.id.action_settings -> true
+            R.id.action_settings -> {
+                navController.navigate(R.id.action_navigation_home_to_navigation_settings)
+                return true
+            }
 
             R.id.action_change_variables -> {
                 alertDialog.show()

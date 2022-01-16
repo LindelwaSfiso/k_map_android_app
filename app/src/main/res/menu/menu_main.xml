@@ -7,10 +7,4 @@
         android:orderInCategory="100"
         android:title="@string/action_settings"
         app:showAsAction="never" />
-    <item
-        android:id="@+id/action_change_variables"
-        android:orderInCategory="100"
-        android:title="@string/change_variable"
-        android:icon="@drawable/ic_change_variables"
-        app:showAsAction="ifRoom" />
 </menu>

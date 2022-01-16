@@ -1,35 +1,32 @@
 <PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <PreferenceCategory app:title="@string/messages_header">
-
-        <EditTextPreference
-            app:key="signature"
-            app:title="@string/signature_title"
-            app:useSimpleSummaryProvider="true" />
+    <PreferenceCategory
+        app:title="Defaults"
+        app:iconSpaceReserved="false">
 
         <ListPreference
-            app:defaultValue="reply"
-            app:entries="@array/reply_entries"
-            app:entryValues="@array/reply_values"
-            app:key="reply"
-            app:title="@string/reply_title"
+            app:iconSpaceReserved="false"
+            app:defaultValue="4_variables"
+            app:entries="@array/change_variables_options"
+            app:entryValues="@array/change_variables_options_values"
+            app:key="variables"
+            app:title="Number of variables"
+            app:summary="Change the number of default variables"
             app:useSimpleSummaryProvider="true" />
 
     </PreferenceCategory>
 
-    <PreferenceCategory app:title="@string/sync_header">
+    <!--    <PreferenceCategory app:title="About">-->
 
-        <SwitchPreferenceCompat
-            app:key="sync"
-            app:title="@string/sync_title" />
+    <!--        <ListPreference-->
+    <!--            app:entries="@array/change_variables_options"-->
+    <!--            app:entryValues="@array/change_variables_options_values"-->
+    <!--            app:key="about"-->
+    <!--            app:enabled="false"-->
+    <!--            app:title="Contact US"-->
+    <!--            app:summary="sfisolindelwa@gmail.com"-->
+    <!--            app:useSimpleSummaryProvider="true" />-->
 
-        <SwitchPreferenceCompat
-            app:dependency="sync"
-            app:key="attachment"
-            app:summaryOff="@string/attachment_summary_off"
-            app:summaryOn="@string/attachment_summary_on"
-            app:title="@string/attachment_title" />
-
-    </PreferenceCategory>
+    <!--    </PreferenceCategory>-->
 
 </PreferenceScreen>
