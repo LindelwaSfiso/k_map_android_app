@@ -4,8 +4,3 @@ An android app for calculating Karnaugh map, which is a pictorial method used to
 
 The app can minimize up to six variables.
 
-# Screen Shots
-
-:-------------------------:|:-------------------------:
-![splas image](https://github.com/LindelwaSfiso/k_map_android_app/blob/master/art/splash.jpg?raw=true) | ![home image(https://github.com/LindelwaSfiso/k_map_android_app/blob/master/art/home.jpg)
-
